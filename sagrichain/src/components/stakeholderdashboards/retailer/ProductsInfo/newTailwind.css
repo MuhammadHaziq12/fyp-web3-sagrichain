@@ -1,0 +1,26 @@
+.table-auto {
+    @apply w-full table-auto;
+  }
+  
+  .table-header-group th {
+    @apply px-4 bg-gray-100 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left;
+  }
+  
+  .table-row-group tr {
+    @apply border-t;
+  }
+  
+  .table-row-group td {
+    @apply px-4 py-2 align-middle text-xs whitespace-nowrap p-2;
+  }
+  
+  @media (max-width: 768px) {
+    .table-header-group, .table-row-group {
+      @apply block;
+    }
+  
+    .table-header-group th, .table-row-group td {
+      @apply block w-full;
+    }
+  }
+  
